@@ -1,0 +1,686 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+/*Resets*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Padrões*/
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+p {
+  color: #525252;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-size: 500;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #3d5633;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+/*Menu*/
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  background-color: #f4fdf0;
+}
+
+header img {
+  margin: 0 0 0 20px;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+header ul li {
+  margin: 0 0 0 20px;
+}
+
+header li a {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #3d5633;
+  text-transform: uppercase;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+
+/*Menu Description*/
+
+.general-container {
+  display: grid;
+  margin: 0 auto;
+}
+
+.initial-content {
+  margin: 60px 140px;
+  max-width: 1160px;
+  align-items: center;
+  max-height: 730px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.separador {
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 1160px;
+  border-bottom: 2px solid #3d5633;
+}
+
+.initial-content div {
+  max-width: 563px;
+  margin: 0 40px 0 0;
+}
+
+.initial-content div p {
+  margin-top: 10px;
+}
+
+/*Menu Description*/
+
+.shopping-area {
+  position: relative;
+  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 60px 140px;
+}
+
+.shopping-area h1 {
+  position: absolute;
+}
+
+.shopping-area div {
+  margin-top: 120px;
+  border-radius: 5px;
+  background-color: #f4fdf0;
+  max-width: 260px;
+  height: 406px;
+}
+
+.shopping-area div h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3d5633;
+  margin: 10px;
+}
+
+.shopping-area div p {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 10px;
+}
+
+.shopping-area div span {
+  color: #3d5633;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px;
+}
+
+.shopping-area div button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: #c4f4c7;
+  text-transform: uppercase;
+  color: #3d5633;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 215px;
+  padding: 10px 0;
+  display: block;
+  margin: 5px auto;
+}
+
+.shopping-area div button:hover {
+  background-color: #7cd882;
+}
+
+/*about the store*/
+
+.about-the-store {
+  border-radius: 5px;
+  margin: 60px auto;
+  background-color: #f4fdf0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1160px;
+}
+
+.about-the-store div {
+  margin: 0 auto;
+  max-width: 518px;
+}
+
+.font-weight-h1 {
+  color: #525252;
+  font-weight: 500;
+}
+
+.detail-h1 {
+  color: #3d5633;
+}
+
+/*contact*/
+
+.container-contact {
+  position: relative;
+  width: 1160px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact form {
+  margin: 20px 0;
+  background-color: #f4fdf0;
+  max-width: 460px;
+  height: 390px;
+  border-radius: 5px;
+}
+
+.contact form input {
+  color: #525252;
+  margin: 6px 20px;
+  border: 1px solid #3d5633;
+  border-radius: 5px;
+  width: 420px;
+  padding: 20px 0 20px 20px;
+}
+
+.contact form textarea {
+  border: 1px solid #3d5633;
+  color: #525252;
+  margin: 5px 20px;
+  border-radius: 5px;
+  resize: none;
+  width: 420px;
+  padding: 20px 0 20px 20px;
+}
+
+.contact form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #c4f4c7;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  margin: 5px 20px;
+}
+
+.contact form button:hover {
+  background-color: #7cd882;
+}
+
+.separador-right {
+  height: 390px;
+  position: absolute;
+  left: 580px;
+  top: 80px;
+  border-right: 2px solid #3d5633;
+}
+
+.come-to-us h1 {
+  text-align: center;
+}
+
+.come-to-us p {
+  margin: 160px 0 0 150px;
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  background-color: #f4fdf0;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.detail-footer {
+  color: #3d5633;
+}
+
+/*@Media*/
+
+@media screen and (max-width: 1320px) {
+  .separador {
+    margin: 0 auto;
+    width: 1050px;
+  }
+
+  .initial-content {
+    margin: 60px 140px;
+    max-width: 1050px;
+    max-height: 700px;
+  }
+
+  .initial-content div {
+    max-width: 400px;
+    margin: 0 40px 0 50px;
+  }
+
+  .initial-content h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .initial-content div p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  .shopping-area {
+    width: 1050px;
+    grid-template-columns: repeat(2, 320px);
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .shopping-area div {
+    margin-top: 60px;
+    max-width: 260px;
+  }
+
+  .shopping-area h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about-the-store {
+    max-width: 1050px;
+  }
+
+  .about-the-store div {
+    margin: 0 10px;
+    max-width: 560px;
+  }
+
+  .about-the-store div h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .font-weight-h1 {
+    font-weight: 400;
+  }
+
+  .about-the-store div p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .container-contact {
+    position: relative;
+    width: 1050px;
+    margin: 60px auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .contact form {
+    margin: 20px 0;
+    max-width: 460px;
+    height: 390px;
+    border-radius: 5px;
+  }
+
+  .separador-right {
+    top: 60px;
+  }
+
+  .come-to-us h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .come-to-us p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/*Media*/
+
+@media screen and (max-width: 1210px) {
+  .separador {
+    width: 900px;
+  }
+
+  .initial-content {
+    max-width: 900px;
+  }
+
+  .shopping-area {
+    width: 900px;
+  }
+
+  .about-the-store {
+    max-width: 900px;
+  }
+
+  .container-contact {
+    width: 900px;
+  }
+
+  .contact form input {
+    margin: 6px 10px;
+    width: 380px;
+  }
+
+  .contact form textarea {
+    margin: 5px 10px;
+    width: 380px;
+  }
+
+  .contact form button {
+    margin: 5px 10px;
+  }
+
+  .separador-right {
+    left: 480px;
+  }
+}
+
+/*Media*/
+
+@media screen and (max-width: 1060px) {
+  .separador {
+    max-width: 600px;
+  }
+
+  .initial-content {
+    margin: 30px auto;
+    max-width: 600px;
+  }
+
+  .initial-content div {
+    max-width: 300px;
+    margin: 0 20px 0 25px;
+  }
+
+  .initial-content div p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+
+  .shopping-area {
+    width: 600px;
+    margin: 30px auto;
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .shopping-area div {
+    margin-top: 40px;
+    max-width: 260px;
+    height: 406px;
+  }
+
+  .shopping-area h1 {
+    top: -15px;
+  }
+
+  .about-the-store {
+    margin: 30px auto;
+    max-width: 600px;
+  }
+
+  .about-the-store h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .about-the-store div {
+    margin: 0 5px;
+    max-width: 560px;
+  }
+
+  .about-the-store div p {
+    font-weight: 300px;
+    font-size: 14px;
+  }
+
+  .container-contact {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 600px;
+    margin: 30px auto;
+  }
+
+  .contact form {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 390px;
+  }
+
+  .contact h1 {
+    text-align: center;
+  }
+
+  .come-to-us p {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .separador-right {
+    border: none;
+  }
+}
+
+/*@media*/
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    margin: 10px 0 0 0;
+  }
+
+  header ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  header ul li + li {
+    margin-top: 10px;
+  }
+
+  .separador {
+    margin: 30px auto;
+    width: 400px;
+  }
+
+  .initial-content {
+    grid-template-columns: 1fr;
+  }
+
+  .initial-content img {
+    margin: 30px auto;
+    margin-top: 10px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .initial-content h1 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .initial-content div {
+    max-width: 400px;
+  }
+
+  .shopping-area {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .shopping-area h1 {
+    position: absolute;
+    top: -30px;
+  }
+
+  .shopping-area div p {
+    margin: 10px;
+  }
+
+  .about-the-store {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .about-the-store img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .container-contact {
+    max-width: 400px;
+  }
+
+  .contact h1 {
+    margin-top: -30px;
+  }
+}
+
+/*Media*/
+
+@media screen and (max-width: 420px) {
+  .separador {
+    margin: 15px auto;
+    width: 360px;
+  }
+
+  .initial-content img {
+    margin: 10px auto;
+    margin-top: 5px;
+    width: 360px;
+    height: 300px;
+  }
+
+  .initial-content h1 {
+    margin-bottom: 15px;
+  }
+
+  .initial-content div {
+    max-width: 360px;
+  }
+
+  .shopping-area {
+    max-width: 360px;
+  }
+
+  .shopping-area h1 {
+    top: -15px;
+  }
+
+  .shopping-area div p {
+    margin: 5px;
+  }
+
+  .about-the-store {
+    margin: 15px auto;
+    max-width: 360px;
+  }
+
+  .container-contact {
+    max-width: 360px;
+  }
+
+  .contact form {
+    margin: 15px auto;
+    max-width: 330px;
+    height: 364px;
+  }
+
+  .contact form input {
+    margin: 3px 5px;
+    width: 320px;
+  }
+
+  .contact form textarea {
+    margin: 4px 5px;
+    width: 320px;
+  }
+
+  .contact form button {
+    margin: 3px 4px;
+  }
+
+  .contact h1 {
+    margin-top: -15px;
+  }
+}
